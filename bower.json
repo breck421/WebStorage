@@ -1,0 +1,30 @@
+{
+  "name": "WebStorage",
+  "version": "0.0.0",
+  "authors": [
+    "Jordan <jordan.papaleo@clearcapital.com>"
+  ],
+  "description": "Webstorage module for angular",
+  "keywords": [
+    "Web",
+    "Storage",
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "homepage": "http://",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.16"
+  },
+  "devDependencies": {
+    "angular-mocks": "1.2.16",
+    "angular-scenario": "1.2.16",
+    "base64": "~0.2.1"
+  }
+}
