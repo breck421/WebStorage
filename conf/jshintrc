@@ -15,22 +15,19 @@
 	"-W041": true,
 	"-W018": true,
 	"globals": {
-		"xdescribe": true,
-		"xit": true,
-		"jasmine": true,
-		"google": true,
-		"angular": true,
-		"$filter": true,
-		"describe": true,
-		"it": true,
+		"WebStorage": true,
 		"beforeEach": true,
+		"describe": true,
+		"xdescribe": true,
+		"it": true,
+		"xit": true,
 		"inject": true,
-		"expect": true,
 		"spyOn": true,
+		"expect": true,
+		"angular": true,
 		"window": true,
 		"document": true,
-		"localStorage": true,
-		"alert": true,
-		"Base64": true
+		"btoa": true,
+		"atob": true
 	}
 }

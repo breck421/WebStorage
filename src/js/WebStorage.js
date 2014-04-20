@@ -13,11 +13,11 @@ var WebStorage = function(storageType) {
 };
 
 WebStorage.prototype.serialize = function(value) {
-	return angular.toJson(value);
+	return JSON.serialize(value);
 };
 
 WebStorage.prototype.deserialize = function(value) {
-	return angular.fromJson(value);
+	return JSON.deserialize(value);
 };
 
 WebStorage.prototype.encode = function(value) {
@@ -112,36 +112,6 @@ WebStorage.prototype.get = function(key) {
 	}
 
 	return undefined;
-};
-
-/**
- * Returns all keys in web storage that start with keyPrefix; if keyPrefix is not provided, all keys are returned.
- * @param  {String} keyPrefix If provided, returns keys that start with this value
- * @return {Array}           An array of matching keys
- */
-WebStorage.prototype.getAll = function(keyPrefix) {
-	var returnKeys = [], key, keyPrefixLength;
-
-	if (keyPrefix != null) {
-		keyPrefixLength = keyPrefix.length;
-	}
-	else {
-		keyPrefixLength = 0;
-	}
-
-	try {
-		for (key in this.webStorage) {
-			if ((keyPrefixLength === 0) || (key.substr(0, keyPrefixLength) === keyPrefix)) {
-				returnKeys.push(key.substr(keyPrefixLength));
-			}
-		}
-	}
-	catch (error) {
-		// console.error("Error occurred getting all keys starting with " + keyPrefix);
-		throw new Error("Unable to read stored preferences.");
-	}
-
-	return returnKeys;
 };
 
 /**

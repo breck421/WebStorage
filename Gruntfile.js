@@ -25,7 +25,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('test', [
 		'jshint',
-		'grunt-karma'
+		'karma:unit'
 	]);
 
 	grunt.registerTask('build', [
@@ -50,7 +50,6 @@ var jshintConfig = {
 		src: [
 			'Grunfile.js',
 			'src/js/*.js',
-			'dist/js/*.js',
 			'tests/*.js'
 		]
 	}
