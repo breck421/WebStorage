@@ -1,8 +1,11 @@
 AngularJS WebStorage Module
 ===========================
-*
+* This angular module uses provides a service for interacting with local and session web storage.
 
-APIs:
+### Author
+Jordan Papaleo, https://github.com/breck421/angular-web-storage
+
+API:
 
 `jp_WebStorage.local`
 * `set(key, value)` -- inserts a key value pair into window.localStorage.setItem()
@@ -17,15 +20,13 @@ APIs:
 * `clear()`         -- remove all key/value pairs from storage (session storage)
 
 
-## Author
-Jordan Papaleo, https://github.com/breck421/angular-web-storage
-
+### Version History
 * v0.0.0 - 4/20/2014
     - Modularized a service I created for another project
     - Added grunt tasks for testing, building, and packaging
     - Created unit tests
 
-## License
+### License
     The MIT License
 
     Permission is hereby granted, free of charge, to any person obtaining a
